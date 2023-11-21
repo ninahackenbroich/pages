@@ -24,7 +24,7 @@
   </nav>
 
   <div class="text-center">
-    <h4>{{ images[currentPage].title }}</h4>
+    <h4 appClass [backgroundColor]=" 'purple' ">{{ images[currentPage].title }}</h4>
     <img [src]=" images[currentPage].url " class="rounded" alt="..." style="width: 400px;">
   </div>
   <div [ngSwitch]="currentPage">
